@@ -6,31 +6,21 @@
       "size" : "20x20"
     },
     {
-      "filename" : "Icon-Notification@3x.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "20x20"
     },
     {
-      "filename" : "Icon-Small.png",
-      "idiom" : "iphone",
-      "scale" : "1x",
-      "size" : "29x29"
-    },
-    {
-      "filename" : "Icon-Small@2x.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "29x29"
     },
     {
-      "filename" : "Icon-Small@3x.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "29x29"
     },
     {
-      "filename" : "AppIcon40x40@2x.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "40x40"
@@ -41,25 +31,11 @@
       "size" : "40x40"
     },
     {
-      "filename" : "Icon.png",
-      "idiom" : "iphone",
-      "scale" : "1x",
-      "size" : "57x57"
-    },
-    {
-      "filename" : "Icon@2x.png",
-      "idiom" : "iphone",
-      "scale" : "2x",
-      "size" : "57x57"
-    },
-    {
-      "filename" : "Icon-60@2x.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "60x60"
     },
     {
-      "filename" : "Icon-60@3x.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "60x60"
@@ -115,7 +91,6 @@
       "size" : "1024x1024"
     },
     {
-      "filename" : "16x16.png",
       "idiom" : "mac",
       "scale" : "1x",
       "size" : "16x16"
@@ -126,7 +101,6 @@
       "size" : "16x16"
     },
     {
-      "filename" : "32x32.png",
       "idiom" : "mac",
       "scale" : "1x",
       "size" : "32x32"
@@ -137,7 +111,6 @@
       "size" : "32x32"
     },
     {
-      "filename" : "128x128.png",
       "idiom" : "mac",
       "scale" : "1x",
       "size" : "128x128"
@@ -148,7 +121,6 @@
       "size" : "128x128"
     },
     {
-      "filename" : "256x256.png",
       "idiom" : "mac",
       "scale" : "1x",
       "size" : "256x256"
@@ -159,180 +131,14 @@
       "size" : "256x256"
     },
     {
-      "filename" : "512x512.png",
       "idiom" : "mac",
       "scale" : "1x",
       "size" : "512x512"
     },
     {
-      "filename" : "iTunesArtwork@2x.png",
       "idiom" : "mac",
       "scale" : "2x",
       "size" : "512x512"
-    },
-    {
-      "filename" : "48x48.png",
-      "idiom" : "universal",
-      "scale" : "1x"
-    },
-    {
-      "filename" : "24x24.png",
-      "idiom" : "universal",
-      "scale" : "1x",
-      "size" : "24x24"
-    },
-    {
-      "filename" : "AppIcon24x24@2x.png",
-      "idiom" : "universal",
-      "scale" : "2x",
-      "size" : "24x24"
-    },
-    {
-      "filename" : "AppIcon27.5x27.5@2x.png",
-      "idiom" : "universal",
-      "scale" : "2x",
-      "size" : "27.5x27.5"
-    },
-    {
-      "filename" : "Icon-Small-40.png",
-      "idiom" : "universal",
-      "scale" : "1x",
-      "size" : "40x40"
-    },
-    {
-      "filename" : "AppIcon44x44@2x.png",
-      "idiom" : "universal",
-      "scale" : "2x",
-      "size" : "44x44"
-    },
-    {
-      "filename" : "Icon-Small-50.png",
-      "idiom" : "universal",
-      "scale" : "1x",
-      "size" : "50x50"
-    },
-    {
-      "filename" : "Icon-Small-50@2x.png",
-      "idiom" : "universal",
-      "scale" : "2x",
-      "size" : "50x50"
-    },
-    {
-      "filename" : "Icon-72.png",
-      "idiom" : "universal",
-      "scale" : "1x",
-      "size" : "72x72"
-    },
-    {
-      "filename" : "Icon-72@2x.png",
-      "idiom" : "universal",
-      "scale" : "2x",
-      "size" : "72x72"
-    },
-    {
-      "filename" : "Icon-76.png",
-      "idiom" : "universal",
-      "scale" : "1x",
-      "size" : "76x76"
-    },
-    {
-      "filename" : "Icon-76@2x.png",
-      "idiom" : "universal",
-      "scale" : "2x",
-      "size" : "76x76"
-    },
-    {
-      "filename" : "Icon-83.5@2x.png",
-      "idiom" : "universal",
-      "scale" : "2x",
-      "size" : "83.5x83.5"
-    },
-    {
-      "filename" : "AppIcon86x86@2x.png",
-      "idiom" : "universal",
-      "scale" : "2x",
-      "size" : "86x86"
-    },
-    {
-      "filename" : "AppIcon98x98@2x.png",
-      "idiom" : "universal",
-      "scale" : "2x",
-      "size" : "98x98"
-    },
-    {
-      "filename" : "1024x1024.png",
-      "idiom" : "universal",
-      "scale" : "1x",
-      "size" : "1024x1024"
-    },
-    {
-      "filename" : "Icon-Small-40@2x.png",
-      "idiom" : "iphone",
-      "scale" : "2x",
-      "size" : "40x40",
-      "unassigned" : true
-    },
-    {
-      "filename" : "GooglePlayStore.png",
-      "idiom" : "mac",
-      "scale" : "1x",
-      "size" : "512x512",
-      "unassigned" : true
-    },
-    {
-      "filename" : "iTunesArtwork.png",
-      "idiom" : "mac",
-      "scale" : "1x",
-      "size" : "512x512",
-      "unassigned" : true
-    },
-    {
-      "filename" : "64x64.png",
-      "idiom" : "universal",
-      "scale" : "1x",
-      "unassigned" : true
-    },
-    {
-      "filename" : "hdpi.png",
-      "idiom" : "universal",
-      "scale" : "1x",
-      "unassigned" : true
-    },
-    {
-      "filename" : "Icon-Notification.png",
-      "idiom" : "universal",
-      "scale" : "1x",
-      "unassigned" : true
-    },
-    {
-      "filename" : "ldpi.png",
-      "idiom" : "universal",
-      "scale" : "1x",
-      "unassigned" : true
-    },
-    {
-      "filename" : "mdpi.png",
-      "idiom" : "universal",
-      "scale" : "1x",
-      "unassigned" : true
-    },
-    {
-      "filename" : "xhdpi.png",
-      "idiom" : "universal",
-      "scale" : "1x",
-      "unassigned" : true
-    },
-    {
-      "filename" : "xxhdpi.png",
-      "idiom" : "universal",
-      "scale" : "1x",
-      "unassigned" : true
-    },
-    {
-      "filename" : "xxxhdpi.png",
-      "idiom" : "universal",
-      "scale" : "1x",
-      "unassigned" : true
     }
   ],
   "info" : {

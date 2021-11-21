@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>773719066925-ngupjf33up3hoviuti8n5k2mjd9qed40.apps.googleusercontent.com</string>
+	<string>179670442209-8kom4ab553h5v9dp19qsr883euku4nkj.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.773719066925-ngupjf33up3hoviuti8n5k2mjd9qed40</string>
+	<string>com.googleusercontent.apps.179670442209-8kom4ab553h5v9dp19qsr883euku4nkj</string>
 	<key>API_KEY</key>
-	<string>AIzaSyAnf8O3pRjDNTRTFaP0L-2TvI_3NHu8NFs</string>
+	<string>AIzaSyD0krEDGuwaB31i03EBNt1A6cJdfoDcL58</string>
 	<key>GCM_SENDER_ID</key>
-	<string>773719066925</string>
+	<string>179670442209</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.RosalieWessels.Splanner1</string>
+	<string>com.RosalieWessels.Splanner</string>
 	<key>PROJECT_ID</key>
-	<string>splanner-metroha</string>
+	<string>splanner-a8267</string>
 	<key>STORAGE_BUCKET</key>
-	<string>splanner-metroha.appspot.com</string>
+	<string>splanner-a8267.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:773719066925:ios:53265348118b042f8caba4</string>
+	<string>1:179670442209:ios:df647f3b56586241e757a0</string>
 </dict>
 </plist>
