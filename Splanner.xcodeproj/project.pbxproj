@@ -13,12 +13,13 @@
 		118B53EF274A9CBA00F442BF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118B53DD274A9CB800F442BF /* ContentView.swift */; };
 		118B53F0274A9CBA00F442BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 118B53DE274A9CBA00F442BF /* Assets.xcassets */; };
 		118B53F1274A9CBA00F442BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 118B53DE274A9CBA00F442BF /* Assets.xcassets */; };
-		118B53FB274AA21100F442BF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 118B53FA274AA21100F442BF /* GoogleService-Info.plist */; };
-		118B53FC274AA21100F442BF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 118B53FA274AA21100F442BF /* GoogleService-Info.plist */; };
 		118B53FF274AA3A000F442BF /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 118B53FE274AA3A000F442BF /* FirebaseAuth */; };
 		118B5401274AA3A000F442BF /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 118B5400274AA3A000F442BF /* FirebaseFirestore */; };
 		118B5403274AA3A000F442BF /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 118B5402274AA3A000F442BF /* FirebaseFirestoreSwift-Beta */; };
 		118B5405274AA3A000F442BF /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 118B5404274AA3A000F442BF /* FirebaseStorage */; };
+		118B5409274AA8B800F442BF /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 118B5408274AA8B800F442BF /* FirebaseMessaging */; };
+		118B540C274AC06C00F442BF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 118B540B274AC06C00F442BF /* GoogleService-Info.plist */; };
+		118B540D274AC06C00F442BF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 118B540B274AC06C00F442BF /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,7 +29,9 @@
 		118B53E3274A9CBA00F442BF /* Splanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Splanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		118B53E9274A9CBA00F442BF /* Splanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Splanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		118B53EB274A9CBA00F442BF /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
-		118B53FA274AA21100F442BF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		118B5406274AA86D00F442BF /* Splanner--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Splanner--iOS--Info.plist"; sourceTree = "<group>"; };
+		118B540A274ABC5900F442BF /* Splanner (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Splanner (iOS).entitlements"; sourceTree = "<group>"; };
+		118B540B274AC06C00F442BF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +41,7 @@
 			files = (
 				118B5403274AA3A000F442BF /* FirebaseFirestoreSwift-Beta in Frameworks */,
 				118B5405274AA3A000F442BF /* FirebaseStorage in Frameworks */,
+				118B5409274AA8B800F442BF /* FirebaseMessaging in Frameworks */,
 				118B53FF274AA3A000F442BF /* FirebaseAuth in Frameworks */,
 				118B5401274AA3A000F442BF /* FirebaseFirestore in Frameworks */,
 			);
@@ -56,9 +60,12 @@
 		118B53D6274A9CB800F442BF = {
 			isa = PBXGroup;
 			children = (
+				118B540A274ABC5900F442BF /* Splanner (iOS).entitlements */,
+				118B5406274AA86D00F442BF /* Splanner--iOS--Info.plist */,
 				118B53DB274A9CB800F442BF /* Shared */,
 				118B53EA274A9CBA00F442BF /* macOS */,
 				118B53E4274A9CBA00F442BF /* Products */,
+				118B5407274AA8B800F442BF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,8 +74,9 @@
 			children = (
 				118B53DC274A9CB800F442BF /* SplannerApp.swift */,
 				118B53DD274A9CB800F442BF /* ContentView.swift */,
+				D861DBB0274ABA710006CE9A /* RegisterSchool.swift */,
 				118B53DE274A9CBA00F442BF /* Assets.xcassets */,
-				118B53FA274AA21100F442BF /* GoogleService-Info.plist */,
+				118B540B274AC06C00F442BF /* GoogleService-Info.plist */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -88,6 +96,13 @@
 				118B53EB274A9CBA00F442BF /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		118B5407274AA8B800F442BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -111,6 +126,7 @@
 				118B5400274AA3A000F442BF /* FirebaseFirestore */,
 				118B5402274AA3A000F442BF /* FirebaseFirestoreSwift-Beta */,
 				118B5404274AA3A000F442BF /* FirebaseStorage */,
+				118B5408274AA8B800F442BF /* FirebaseMessaging */,
 			);
 			productName = "Splanner (iOS)";
 			productReference = 118B53E3274A9CBA00F442BF /* Splanner.app */;
@@ -179,7 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				118B53F0274A9CBA00F442BF /* Assets.xcassets in Resources */,
-				118B53FB274AA21100F442BF /* GoogleService-Info.plist in Resources */,
+				118B540C274AC06C00F442BF /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,7 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				118B53F1274A9CBA00F442BF /* Assets.xcassets in Resources */,
-				118B53FC274AA21100F442BF /* GoogleService-Info.plist in Resources */,
+				118B540D274AC06C00F442BF /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +217,7 @@
 			files = (
 				118B53EE274A9CBA00F442BF /* ContentView.swift in Sources */,
 				118B53EC274A9CBA00F442BF /* SplannerApp.swift in Sources */,
+				D861DBB1274ABA710006CE9A /* RegisterSchool.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +227,7 @@
 			files = (
 				118B53EF274A9CBA00F442BF /* ContentView.swift in Sources */,
 				118B53ED274A9CBA00F442BF /* SplannerApp.swift in Sources */,
+				D861DBB2274ABA710006CE9A /* RegisterSchool.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,10 +350,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Splanner (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JXATX5P8FC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Splanner--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -347,7 +368,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.RosalieWessels.Splanner;
+				PRODUCT_BUNDLE_IDENTIFIER = com.RosalieWessels.Splanner1;
 				PRODUCT_NAME = Splanner;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -361,10 +382,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Splanner (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JXATX5P8FC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Splanner--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -376,7 +400,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.RosalieWessels.Splanner;
+				PRODUCT_BUNDLE_IDENTIFIER = com.RosalieWessels.Splanner1;
 				PRODUCT_NAME = Splanner;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -501,6 +525,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 118B53FD274AA3A000F442BF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
+		};
+		118B5408274AA8B800F442BF /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 118B53FD274AA3A000F442BF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
