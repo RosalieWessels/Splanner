@@ -20,12 +20,6 @@
 		118B5409274AA8B800F442BF /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 118B5408274AA8B800F442BF /* FirebaseMessaging */; };
 		118B540C274AC06C00F442BF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 118B540B274AC06C00F442BF /* GoogleService-Info.plist */; };
 		118B540D274AC06C00F442BF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 118B540B274AC06C00F442BF /* GoogleService-Info.plist */; };
-		118B540F274ACFC900F442BF /* StudentHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118B540E274ACFC900F442BF /* StudentHomeView.swift */; };
-		118B5410274ACFC900F442BF /* StudentHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118B540E274ACFC900F442BF /* StudentHomeView.swift */; };
-		118B5412274AD31700F442BF /* EventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118B5411274AD31700F442BF /* EventModel.swift */; };
-		118B5413274AD31700F442BF /* EventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118B5411274AD31700F442BF /* EventModel.swift */; };
-		118B5417274AD5FD00F442BF /* EventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118B5416274AD5FD00F442BF /* EventViewModel.swift */; };
-		118B5418274AD5FD00F442BF /* EventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118B5416274AD5FD00F442BF /* EventViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,9 +32,6 @@
 		118B5406274AA86D00F442BF /* Splanner--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Splanner--iOS--Info.plist"; sourceTree = "<group>"; };
 		118B540A274ABC5900F442BF /* Splanner (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Splanner (iOS).entitlements"; sourceTree = "<group>"; };
 		118B540B274AC06C00F442BF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		118B540E274ACFC900F442BF /* StudentHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentHomeView.swift; sourceTree = "<group>"; };
-		118B5411274AD31700F442BF /* EventModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventModel.swift; sourceTree = "<group>"; };
-		118B5416274AD5FD00F442BF /* EventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,8 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				118B53DC274A9CB800F442BF /* SplannerApp.swift */,
-				118B5415274AD32F00F442BF /* View */,
-				118B5414274AD32400F442BF /* Model */,
+				118B53DD274A9CB800F442BF /* ContentView.swift */,
 				118B53DE274A9CBA00F442BF /* Assets.xcassets */,
 				118B540B274AC06C00F442BF /* GoogleService-Info.plist */,
 			);
@@ -112,24 +102,6 @@
 			children = (
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		118B5414274AD32400F442BF /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				118B5416274AD5FD00F442BF /* EventViewModel.swift */,
-				118B5411274AD31700F442BF /* EventModel.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		118B5415274AD32F00F442BF /* View */ = {
-			isa = PBXGroup;
-			children = (
-				118B53DD274A9CB800F442BF /* ContentView.swift */,
-				118B540E274ACFC900F442BF /* StudentHomeView.swift */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,9 +215,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				118B53EE274A9CBA00F442BF /* ContentView.swift in Sources */,
-				118B540F274ACFC900F442BF /* StudentHomeView.swift in Sources */,
-				118B5412274AD31700F442BF /* EventModel.swift in Sources */,
-				118B5417274AD5FD00F442BF /* EventViewModel.swift in Sources */,
 				118B53EC274A9CBA00F442BF /* SplannerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -255,9 +224,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				118B53EF274A9CBA00F442BF /* ContentView.swift in Sources */,
-				118B5410274ACFC900F442BF /* StudentHomeView.swift in Sources */,
-				118B5413274AD31700F442BF /* EventModel.swift in Sources */,
-				118B5418274AD5FD00F442BF /* EventViewModel.swift in Sources */,
 				118B53ED274A9CBA00F442BF /* SplannerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
