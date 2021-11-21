@@ -19,7 +19,7 @@ struct SplannerApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            StudentHomeView()
         }
     }
 }
