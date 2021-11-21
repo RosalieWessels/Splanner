@@ -82,8 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				118B53DC274A9CB800F442BF /* SplannerApp.swift */,
-				118B53DD274A9CB800F442BF /* ContentView.swift */,
-				D861DBB0274ABA710006CE9A /* RegisterSchool.swift */,
+				118B5415274AD32F00F442BF /* View */,
+				118B5414274AD32400F442BF /* Model */,
 				118B53DE274A9CBA00F442BF /* Assets.xcassets */,
 				118B540B274AC06C00F442BF /* GoogleService-Info.plist */,
 			);
@@ -247,7 +247,6 @@
 				118B5412274AD31700F442BF /* EventModel.swift in Sources */,
 				118B5417274AD5FD00F442BF /* EventViewModel.swift in Sources */,
 				118B53EC274A9CBA00F442BF /* SplannerApp.swift in Sources */,
-				D861DBB1274ABA710006CE9A /* RegisterSchool.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +259,6 @@
 				118B5413274AD31700F442BF /* EventModel.swift in Sources */,
 				118B5418274AD5FD00F442BF /* EventViewModel.swift in Sources */,
 				118B53ED274A9CBA00F442BF /* SplannerApp.swift in Sources */,
-				D861DBB2274ABA710006CE9A /* RegisterSchool.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
