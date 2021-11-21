@@ -20,6 +20,14 @@
 		118B5409274AA8B800F442BF /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 118B5408274AA8B800F442BF /* FirebaseMessaging */; };
 		118B540C274AC06C00F442BF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 118B540B274AC06C00F442BF /* GoogleService-Info.plist */; };
 		118B540D274AC06C00F442BF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 118B540B274AC06C00F442BF /* GoogleService-Info.plist */; };
+		118B5420274AE88100F442BF /* RegisterSchoolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118B541F274AE88100F442BF /* RegisterSchoolView.swift */; };
+		118B5421274AE88100F442BF /* RegisterSchoolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118B541F274AE88100F442BF /* RegisterSchoolView.swift */; };
+		118B5423274AE91300F442BF /* EventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118B5422274AE91300F442BF /* EventModel.swift */; };
+		118B5424274AE91300F442BF /* EventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118B5422274AE91300F442BF /* EventModel.swift */; };
+		118B5426274AE93E00F442BF /* EventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118B5425274AE93E00F442BF /* EventViewModel.swift */; };
+		118B5427274AE93E00F442BF /* EventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118B5425274AE93E00F442BF /* EventViewModel.swift */; };
+		118B542C274AE97C00F442BF /* StudentHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118B542B274AE97C00F442BF /* StudentHomeView.swift */; };
+		118B542D274AE97C00F442BF /* StudentHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118B542B274AE97C00F442BF /* StudentHomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +40,10 @@
 		118B5406274AA86D00F442BF /* Splanner--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Splanner--iOS--Info.plist"; sourceTree = "<group>"; };
 		118B540A274ABC5900F442BF /* Splanner (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Splanner (iOS).entitlements"; sourceTree = "<group>"; };
 		118B540B274AC06C00F442BF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		118B541F274AE88100F442BF /* RegisterSchoolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterSchoolView.swift; sourceTree = "<group>"; };
+		118B5422274AE91300F442BF /* EventModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventModel.swift; sourceTree = "<group>"; };
+		118B5425274AE93E00F442BF /* EventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewModel.swift; sourceTree = "<group>"; };
+		118B542B274AE97C00F442BF /* StudentHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentHomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +85,8 @@
 			isa = PBXGroup;
 			children = (
 				118B53DC274A9CB800F442BF /* SplannerApp.swift */,
-				118B53DD274A9CB800F442BF /* ContentView.swift */,
+				118B541D274AE83300F442BF /* View */,
+				118B541E274AE83A00F442BF /* Model */,
 				118B53DE274A9CBA00F442BF /* Assets.xcassets */,
 				118B540B274AC06C00F442BF /* GoogleService-Info.plist */,
 			);
@@ -102,6 +115,25 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		118B541D274AE83300F442BF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				118B53DD274A9CB800F442BF /* ContentView.swift */,
+				118B541F274AE88100F442BF /* RegisterSchoolView.swift */,
+				118B542B274AE97C00F442BF /* StudentHomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		118B541E274AE83A00F442BF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				118B5422274AE91300F442BF /* EventModel.swift */,
+				118B5425274AE93E00F442BF /* EventViewModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,6 +247,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				118B53EE274A9CBA00F442BF /* ContentView.swift in Sources */,
+				118B542C274AE97C00F442BF /* StudentHomeView.swift in Sources */,
+				118B5420274AE88100F442BF /* RegisterSchoolView.swift in Sources */,
+				118B5423274AE91300F442BF /* EventModel.swift in Sources */,
+				118B5426274AE93E00F442BF /* EventViewModel.swift in Sources */,
 				118B53EC274A9CBA00F442BF /* SplannerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,6 +260,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				118B53EF274A9CBA00F442BF /* ContentView.swift in Sources */,
+				118B542D274AE97C00F442BF /* StudentHomeView.swift in Sources */,
+				118B5421274AE88100F442BF /* RegisterSchoolView.swift in Sources */,
+				118B5424274AE91300F442BF /* EventModel.swift in Sources */,
+				118B5427274AE93E00F442BF /* EventViewModel.swift in Sources */,
 				118B53ED274A9CBA00F442BF /* SplannerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
