@@ -19,6 +19,8 @@
 		118B5401274AA3A000F442BF /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 118B5400274AA3A000F442BF /* FirebaseFirestore */; };
 		118B5403274AA3A000F442BF /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 118B5402274AA3A000F442BF /* FirebaseFirestoreSwift-Beta */; };
 		118B5405274AA3A000F442BF /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 118B5404274AA3A000F442BF /* FirebaseStorage */; };
+		D861DBB1274ABA710006CE9A /* RegisterSchool.swift in Sources */ = {isa = PBXBuildFile; fileRef = D861DBB0274ABA710006CE9A /* RegisterSchool.swift */; };
+		D861DBB2274ABA710006CE9A /* RegisterSchool.swift in Sources */ = {isa = PBXBuildFile; fileRef = D861DBB0274ABA710006CE9A /* RegisterSchool.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,7 @@
 		118B53E9274A9CBA00F442BF /* Splanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Splanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		118B53EB274A9CBA00F442BF /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		118B53FA274AA21100F442BF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D861DBB0274ABA710006CE9A /* RegisterSchool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterSchool.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,7 @@
 			children = (
 				118B53DC274A9CB800F442BF /* SplannerApp.swift */,
 				118B53DD274A9CB800F442BF /* ContentView.swift */,
+				D861DBB0274ABA710006CE9A /* RegisterSchool.swift */,
 				118B53DE274A9CBA00F442BF /* Assets.xcassets */,
 				118B53FA274AA21100F442BF /* GoogleService-Info.plist */,
 			);
@@ -201,6 +205,7 @@
 			files = (
 				118B53EE274A9CBA00F442BF /* ContentView.swift in Sources */,
 				118B53EC274A9CBA00F442BF /* SplannerApp.swift in Sources */,
+				D861DBB1274ABA710006CE9A /* RegisterSchool.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +215,7 @@
 			files = (
 				118B53EF274A9CBA00F442BF /* ContentView.swift in Sources */,
 				118B53ED274A9CBA00F442BF /* SplannerApp.swift in Sources */,
+				D861DBB2274ABA710006CE9A /* RegisterSchool.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
