@@ -22,65 +22,111 @@ struct LoginSchoolView: View {
     
     var body: some View {
         if loggedIn == false {
-            ZStack {
-                Color("backgroundColor").edgesIgnoringSafeArea(.all)
+            VStack {
+                //dropdown
+                Text("School Log-in")
+                    .font(.custom("Arial-BoldMT", size: 35))
+                    .padding(.top, 50)
                 
-                VStack {
-                    //dropdown
-                    Text("School Login")
-                        .font(.custom("Arial-BoldMT", size: 35))
-                    
-                    Spacer()
-                    
-                    HStack {
-                        
-                        Text("School:")
-                        Menu {
-                            ForEach(dropDownList, id: \.self){ school in
-                                Button(school) {
-                                    self.value = school
-                                }
-                            }
-                        } label: {
-                            VStack(spacing: 5){
-                                HStack{
-                                    Text(value.isEmpty ? placeholder : value)
-                                        .foregroundColor(value.isEmpty ? .gray : .black)
-                                    Spacer()
-                                    Image(systemName: "chevron.down")
-                                        .foregroundColor(Color.orange)
-                                        .font(Font.system(size: 20, weight: .bold))
-                                }
-                                .padding(.horizontal)
-                                Rectangle()
-                                    .fill(Color.orange)
-                                    .frame(height: 2)
-                                
+                Spacer()
+                
+                HStack {
+                    Menu {
+                        ForEach(dropDownList, id: \.self){ school in
+                            Button(school) {
+                                self.value = school
                             }
                         }
-                        
+                    } label: {
+                        VStack(spacing: 5){
+                            HStack{
+                                Text(value.isEmpty ? placeholder : value)
+                                    .foregroundColor(value.isEmpty ? .gray : .black)
+                                Spacer()
+                                Image(systemName: "chevron.down")
+                                    .foregroundColor(Color.blue)
+                                    .font(Font.system(size: 20, weight: .bold))
+                            }
+                            .padding(.horizontal)
+                            Rectangle()
+                                .fill(Color.blue)
+                                .frame(height: 2)
+                                .padding(.bottom, 25)
+                            Text("Email:")
+                                .multilineTextAlignment(.leading)
+                                .padding(.trailing,250)
+                                .padding(.all)
+                                .font(Font.custom("Arial-BoldMT", size: 20))
+                                .offset(y:15.0)
+                                .foregroundColor(Color.black)
+                            ZStack {
+                            Rectangle()
+                                .foregroundColor(Color.gray)
+                                .frame(width:350, height: 50)
+                                .cornerRadius(5)
+                                .scaledToFit()
+                                .frame(width:300, height: 50)
+                                .padding(.top, -15.0)
+                            TextField("Enter Email Here", text: $email)
+                                .foregroundColor(Color.gray)
+                                .frame(width:350, height: 50)
+                                .padding(.bottom)
+                                .padding(.leading, -195)
+                            }
+                            Text("Password:")
+                                .multilineTextAlignment(.leading)
+                                .padding(.trailing,210)
+                                .padding(.all)
+                                .font(Font.custom("Arial-BoldMT", size: 20))
+                                .offset(y:15.0)
+                                .foregroundColor(Color.black)
+                            ZStack {
+                            Rectangle()
+                                .foregroundColor(Color.gray)
+                                .frame(width:350, height: 50)
+                                .cornerRadius(5)
+                                .scaledToFit()
+                                .frame(width:300, height: 50)
+                                .padding(.top, -15.0)
+                                .padding(.bottom, 285)
+                            TextField("Enter Password Here", text: $password)
+                                .foregroundColor(Color.gray)
+                                .frame(width:350, height: 50)
+                                .padding(.bottom, 300)
+                                .padding(.leading, -160)
+                                
+                                Spacer()
+                                
+                                Rectangle()
+                                    .foregroundColor(Color.gray)
+                                    .frame(width:350, height: 65)
+                                    .cornerRadius(25)
+                                    .scaledToFit()
+                                    .frame(width:300, height: 50)
+                                    .offset(y:40)
+                                
+                                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                                    Text("Next")
+                                        .font(Font.custom("Arial-BoldMT", size: 16))
+                                        .multilineTextAlignment(.center)
+                                        .padding(.bottom)
+                                        .offset(y:48)
+                                        .foregroundColor(Color.white)
+                            
+                            }
+                        }
                     }
                     
-                    HStack {
-                        Text("Email:")
-                            //.padding(.trailing, 30)
-                        TextField("", text: $email)
-                    }
-                    HStack {
-                        Text("Password:")
-                            //.padding(.trailing, 275)
-                        TextField("", text: $password)
-                    }
-                    
-                    Spacer()
-                    
-                    Button(action: {}) {
-                        Text("Submit")
-                    }
-                         
                 }
+                
+                
+                
+                
+                
+                    
+                }
+                     
             }
-            
         }
         else {
             StudentHomeView()
@@ -93,3 +139,4 @@ struct LoginSchoolView_Previews: PreviewProvider {
         LoginSchoolView()
     }
 }
+

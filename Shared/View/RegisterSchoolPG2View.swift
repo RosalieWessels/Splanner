@@ -60,7 +60,7 @@ struct RegisterSchoolPG2View: View {
                     .foregroundColor(Color.gray)
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, 10.0)
-                    .padding(.bottom, 70)
+                    .padding(.bottom, 40)
                 
                 Rectangle()
                     .foregroundColor(Color.gray)
@@ -74,9 +74,10 @@ struct RegisterSchoolPG2View: View {
                     Text("Next")
                         .font(Font.custom("Arial-BoldMT", size: 16))
                         .multilineTextAlignment(.center)
-                        .offset(y:113)
+                        
                         .foregroundColor(Color.white)
                 }
+                .offset(y:113)
                 .padding(.all, 5.0)
             }
             .imageScale(.medium)
