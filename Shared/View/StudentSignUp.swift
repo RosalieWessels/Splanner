@@ -58,6 +58,7 @@ struct StudentSignUp: View {
                     .cornerRadius(15)
             }
         }
+            Spacer()
         }
     }
 }

@@ -8,7 +8,7 @@
 import Foundation
 
  struct Event: Identifiable {
-     var id: String = UUID().uuidString
+     var id = UUID()
      var title: String
      var startDate: Date
      var startDateString: String {
@@ -25,4 +25,5 @@ import Foundation
 
  }
 
- extension Event: Equatable, Hashable {}
+
+ //extension Event: Equatable, Hashable {}

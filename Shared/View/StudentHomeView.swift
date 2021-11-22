@@ -6,37 +6,41 @@
 //
 
 import SwiftUI
-import EventKit
 import Combine
+import Firebase
 
 struct StudentHomeView: View {
-
-    @ObservedObject private var viewModel = eventViewModel()
-    @State var classes = []
+    
+    private var db = Firestore.firestore()
+    @State var classes = [Event]()
     @AppStorage("email") var appStorageEmail = ""
 
-    init() {
-     let calendar = Calendar.current
-     print(calendar)
-        self.viewModel.fetchData(email: appStorageEmail)
-    }
 
     var body: some View {
         ScrollView {
-            if viewModel.events.count >= 2 {
+            if classes.count > 0 {
                 VStack {
                     HStack {
                         Text("Your Schedule.")
                             .font(.custom("Arial-BoldMT", size: 35))
-                            .padding(.vertical)
+                            .padding(.top)
+                            .padding(.bottom, 5)
                         Spacer()
                     }
                     .padding(.horizontal)
                     
-                    ForEach(viewModel.events) { event in
+                    HStack {
+                        Text("Monday November 22nd, 2021")
+                            .font(.custom("Arial-BoldMT", size: 20))
+                            .padding(.bottom)
+                        Spacer()
+                    }
+                    .padding(.horizontal)
+                    
+                    ForEach(classes) { event in
                         HStack {
-                            Color("backgroundColor")
-                                .frame(width: 10)
+                            Color("eventColor")
+                                .frame(width: 7)
                             VStack (alignment: .leading) {
                                 Text(event.title)
                                     .font(.custom("Arial-BoldMT", size: 25))
@@ -46,7 +50,7 @@ struct StudentHomeView: View {
                             .padding()
                             Spacer()
                         }
-                        .background(Color("backgroundColor").opacity(0.5))
+                        .background(Color("eventColor").opacity(0.5))
                         .cornerRadius(20)
                         .frame(maxHeight: 200)
                         .padding(.horizontal)
@@ -56,8 +60,46 @@ struct StudentHomeView: View {
                 }
             }
         }
-        
+        .background(Color("backgroundColor").edgesIgnoringSafeArea(.all))
+        .onAppear(perform: {
+            getClasses()
+            
+            Messaging.messaging().subscribe(toTopic: "class6-10") { error in
+              print("Subscribed to weather topic")
+            }
+       })
         .navigationBarBackButtonHidden(true)
+        .navigationBarHidden(true)
+    }
+    
+    func getClasses() {
+        print(appStorageEmail)
+        db.collection("event").order(by: "startDate", descending: false)
+            .getDocuments() { (querySnapshot, err) in
+                if let err = err {
+                    print("Error getting documents: \(err)")
+                } else {
+                    print (querySnapshot!.documents)
+                    for document in querySnapshot!.documents {
+                        let data = document.data()
+                        print(data)
+                        let title = data["title"] as? String ?? ""
+                        let person = data["person"] as? String ?? ""
+                        let startDate = (data["startDate"] as? Timestamp)?.dateValue() ?? Date()
+                        let endDate = (data["endDate"] as? Timestamp)?.dateValue() ?? Date()
+                        print(title)
+                        print(person)
+                        if person == appStorageEmail {
+                            print("YESS")
+                            print(classes.count)
+                            classes.append(Event(title: title, startDate: startDate, endDate: endDate))
+                            print(classes.count)
+                        }
+
+                    }
+
+                }
+        }
     }
 }
 
@@ -67,40 +109,3 @@ struct StudentHomeView_Previews: PreviewProvider {
      StudentHomeView()
  }
 }
-
-
-//VStack {
-//    HStack {
-//        Text("Your Schedule.")
-//            .font(.custom("Arial-BoldMT", size: 35))
-//        Spacer()
-//    }
-//    .padding(.horizontal)
-//
-//
-//
-//    List(viewModel.events) { event in
-//        HStack {
-//            Color("backgroundColor")
-//                .frame(width: 5)
-//            VStack(alignment: .leading) {
-//                Text(event.title)
-//                    .font(.custom("Arial-BoldMT", size: 25))
-//                HStack {
-//                    Text("\(event.startDateString) - \(event.endDateString)")
-//                        .font(.custom("Arial", size: 15))
-//                }
-//
-//            }
-//            Spacer()
-//
-//        }
-//
-//    }
-//    .navigationBarTitle("Events")
-//    .onAppear() {
-//        self.viewModel.fetchData()
-//    }
-//}
-//
-//}

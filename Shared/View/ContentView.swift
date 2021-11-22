@@ -28,12 +28,13 @@ struct ContentView: View {
                 Color("backgroundColor")
                     .edgesIgnoringSafeArea(.all)
                 
-                VStack {
-                    Image("Saly-26")
+                VStack () {
+                    Image("schoolbooks")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                    .padding()
-                    Spacer()
+                        .padding(.horizontal, 50)
+                        .offset(y: -70)
+                    
                     Spacer()
                 }
                 
@@ -46,7 +47,7 @@ struct ContentView: View {
                     Spacer()
                     Spacer()
                     
-                    Text("Register As:").font(Font.custom("Arial-BoldMT", size: 45)).foregroundColor(Color.blue).padding(.vertical, 50)
+                    Text("Register As:").font(Font.custom("Arial-BoldMT", size: 45)).foregroundColor(Color.blue).padding(.vertical, 30)
                     
                     NavigationLink(destination: LoginSchoolView()){
                         ZStack {
@@ -72,12 +73,12 @@ struct ContentView: View {
                         ZStack {
                             RoundedRectangle(cornerRadius: 25)
                                 .foregroundColor(Color.blue.opacity(0.7))
-                                .frame(width: 200, height: 90)
+                                .frame(width: 200, height: 50)
                             
                             Text("Student").font(Font.custom("Arial-BoldMT", size: 30)).foregroundColor(Color.white)
                         }
                     }.padding(.horizontal)
-                    NavigationLink(destination: LoginStudentView()){
+                    NavigationLink(destination: StudentSignUp()){
                         ZStack {
                             RoundedRectangle(cornerRadius: 25)
                                 .foregroundColor(Color.blue.opacity(0.7))
