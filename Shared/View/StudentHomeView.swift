@@ -63,10 +63,8 @@ struct StudentHomeView: View {
         .background(Color("backgroundColor").edgesIgnoringSafeArea(.all))
         .onAppear(perform: {
             getClasses()
+            addNotifications()
             
-            Messaging.messaging().subscribe(toTopic: "class6-10") { error in
-              print("Subscribed to weather topic")
-            }
        })
         .navigationBarBackButtonHidden(true)
         .navigationBarHidden(true)
@@ -94,6 +92,30 @@ struct StudentHomeView: View {
                             print(classes.count)
                             classes.append(Event(title: title, startDate: startDate, endDate: endDate))
                             print(classes.count)
+                        }
+
+                    }
+
+                }
+        }
+    }
+    
+    func addNotifications() {
+        db.collection("Pinewood High School").whereField("Student email", isEqualTo: appStorageEmail)
+            .getDocuments() { (querySnapshot, err) in
+                if let err = err {
+                    print("Error getting documents: \(err)")
+                } else {
+                    print (querySnapshot!.documents)
+                    for document in querySnapshot!.documents {
+                        let data = document.data()
+                        print(data)
+                        let subscribed = data["subscribed"] as? Array ?? []
+                        
+                        for code in subscribed {
+                            Messaging.messaging().subscribe(toTopic: code as! String) { error in
+                              print("Subscribed to \(code) topic")
+                            }
                         }
 
                     }
