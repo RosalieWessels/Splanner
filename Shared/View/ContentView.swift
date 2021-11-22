@@ -8,62 +8,90 @@
 import SwiftUI
 import Firebase
 
-import SwiftUI
-import Firebase
 
 struct ContentView: View {
     
-    @State var db = Firestore.firestore()
     
-    init() {
+    @State var db = Firestore.firestore()
+    @State var CorrectStudentPage = String("")
+    @State var CorrectAdminPage = String("")
+    
+    init(){
         //database work
+        
     }
     
+    
     var body: some View {
-        ZStack {
-            Color("backgroundColor")
-                .edgesIgnoringSafeArea(.all)
-            
-            Image("Saly-26")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .padding()
-            
-            VStack {
-                Image("splanner_transparent copy")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
+        NavigationView {
+            ZStack {
+                Color("backgroundColor")
+                    .edgesIgnoringSafeArea(.all)
+                
+                VStack {
+                    Image("Saly-26")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                    .padding()
+                    Spacer()
+                    Spacer()
+                }
+                
+                VStack {
+                    Image("splanner_transparent copy")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        
+                    Spacer()
+                    Spacer()
+                    Spacer()
                     
-                Spacer()
-                Spacer()
-                Spacer()
-                
-                Text("Register As:").font(Font.custom("Arial-BoldMT", size: 45)).foregroundColor(Color.blue).padding(.vertical, 50)
-                
-                Button(action: SchoolButton){
-                    ZStack {
-                        RoundedRectangle(cornerRadius: 25)
-                            .foregroundColor(Color.blue)
-                            .frame(width: 200, height: 90)
-                        
-                        Text("School").font(Font.custom("Arial-BoldMT", size: 30)).foregroundColor(Color.white)
-                    }
-                }.padding()
-                
-                
-                Button(action: StudentButton){
-                    ZStack {
-                        RoundedRectangle(cornerRadius: 25)
-                            .foregroundColor(Color.blue)
-                            .frame(width: 200, height: 90)
-                        
-                        Text("Student").font(Font.custom("Arial-BoldMT", size: 30)).foregroundColor(Color.white)
-                    }
-                }.padding()
-                
-                
-                
-                
+                    Text("Register As:").font(Font.custom("Arial-BoldMT", size: 45)).foregroundColor(Color.blue).padding(.vertical, 50)
+                    
+                    NavigationLink(destination: LoginSchoolView()){
+                        ZStack {
+                            RoundedRectangle(cornerRadius: 25)
+                                .foregroundColor(Color.blue.opacity(0.7))
+                                .frame(width: 200, height: 50)
+                            
+                            Text("School").font(Font.custom("Arial-BoldMT", size: 30)).foregroundColor(Color.white)
+                        }
+                    }.padding(.horizontal)
+                    NavigationLink(destination: RegisterSchoolView()){
+                        ZStack {
+                            RoundedRectangle(cornerRadius: 25)
+                                .foregroundColor(Color.blue.opacity(0.7))
+                                .frame(width: 200, height: 50)
+                            
+                            Text("Register School").font(Font.custom("Arial-BoldMT", size: 20)).foregroundColor(Color.white)
+                        }
+                    }.padding(.bottom)
+                    
+                    
+                    NavigationLink(destination: LoginStudentView()){
+                        ZStack {
+                            RoundedRectangle(cornerRadius: 25)
+                                .foregroundColor(Color.blue.opacity(0.7))
+                                .frame(width: 200, height: 90)
+                            
+                            Text("Student").font(Font.custom("Arial-BoldMT", size: 30)).foregroundColor(Color.white)
+                        }
+                    }.padding(.horizontal)
+                    NavigationLink(destination: LoginStudentView()){
+                        ZStack {
+                            RoundedRectangle(cornerRadius: 25)
+                                .foregroundColor(Color.blue.opacity(0.7))
+                            
+                                .frame(width: 200, height: 50)
+                            
+                            Text("Register Student").font(Font.custom("Arial-BoldMT", size: 20)).foregroundColor(Color.white)
+                        }
+                    }.padding(.bottom)
+                    
+                    
+                    
+                    
+                }
             }
         }
     }
@@ -74,6 +102,7 @@ struct ContentView: View {
     func StudentButton(){
         print("Student Button Works!")
     }
+    
     
 }
 

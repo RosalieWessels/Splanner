@@ -36,6 +36,11 @@ class AppDelegate: NSObject, UIApplicationDelegate {
         
         Messaging.messaging().delegate = self
         
+        Messaging.messaging().subscribe(toTopic: "class6-10") { error in
+          print("Subscribed to weather topic")
+        }
+        
+        
         if #available(iOS 10.0, *) {
           // For iOS 10 display notification (sent via APNS)
           UNUserNotificationCenter.current().delegate = self

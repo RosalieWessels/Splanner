@@ -1,26 +1,25 @@
 //
-//  RegisterSchoolView.swift
+//  RegisterSchoolPG2View.swift
 //  Splanner
 //
-//  Created by Rosalie Wessels on 11/21/21.
+//  Created by Seika Oelschig on 11/21/21.
 //
 
 import SwiftUI
 
-struct RegisterSchoolView: View {
+struct RegisterSchoolPG3View: View {
     var body: some View {
         VStack {
+            
             Text("Register School")
                 .font(Font.custom("Arial-BoldMT", size: 30))
                 .offset(y:-75)
-                
-            Text("School Name:")
+            Text("Create Student Access Code:")
                 .multilineTextAlignment(.leading)
-                .padding(.trailing,200)
+                .padding(.trailing, 55)
                 .padding(.all)
                 .font(Font.custom("Arial-BoldMT", size: 20))
                 .offset(y:15.0)
-                .progressViewStyle(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=Style@*/DefaultProgressViewStyle()/*@END_MENU_TOKEN@*/)
             ZStack {
             Rectangle()
                 .foregroundColor(Color.gray)
@@ -29,19 +28,16 @@ struct RegisterSchoolView: View {
                 .scaledToFit()
                 .frame(width:300, height: 50)
                 .padding(.top, -15.0)
-                .textFieldStyle(/*@PLACEHOLDER=Text Field Style@*/DefaultTextFieldStyle())
-                TextField("Enter School Name Here", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
-                    .foregroundColor(Color.gray)
-                    .frame(width:350, height: 50)
-                    .padding(.bottom)
-                    .padding(.leading)
+            TextField("Enter Access Code Here", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+                .foregroundColor(Color.gray)
+                .frame(width:350, height: 50)
+                .padding(.bottom)
+                .padding(.leading)
             }
-            Text("Name used for students to look up their school")
+            Text("Code used for students to access school's schedule")
                 .foregroundColor(Color.gray)
                 .multilineTextAlignment(.center)
-                .padding(.horizontal, 30.0)
-            
-            
+                .padding(.horizontal, 10.0)
             Rectangle()
                 .foregroundColor(Color.gray)
                 .frame(width:350, height: 65)
@@ -50,8 +46,8 @@ struct RegisterSchoolView: View {
                 .frame(width:300, height: 50)
                 .offset(y:160)
             
-            NavigationLink(destination: RegisterSchoolPG2View()) {
-                Text("Next")
+            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                Text("Done")
                     .font(Font.custom("Arial-BoldMT", size: 16))
                     .multilineTextAlignment(.center)
                     .offset(y:113)
@@ -62,8 +58,11 @@ struct RegisterSchoolView: View {
         .imageScale(.medium)
             }
         }
-struct RegisterSchool_Previews: PreviewProvider {
+
+struct RegisterSchoolPG3View_Previews: PreviewProvider {
     static var previews: some View {
-        RegisterSchoolView()
+        Group {
+            RegisterSchoolPG3View()
+            }
+        }
     }
-}

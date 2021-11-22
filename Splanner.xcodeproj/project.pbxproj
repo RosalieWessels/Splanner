@@ -28,6 +28,16 @@
 		118B5427274AE93E00F442BF /* EventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118B5425274AE93E00F442BF /* EventViewModel.swift */; };
 		118B542C274AE97C00F442BF /* StudentHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118B542B274AE97C00F442BF /* StudentHomeView.swift */; };
 		118B542D274AE97C00F442BF /* StudentHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118B542B274AE97C00F442BF /* StudentHomeView.swift */; };
+		118B542F274AEE4600F442BF /* StudentSignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118B542E274AEE4600F442BF /* StudentSignUp.swift */; };
+		118B5430274AEE4600F442BF /* StudentSignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118B542E274AEE4600F442BF /* StudentSignUp.swift */; };
+		11A64396274B236500F4E8CE /* LogInViewSchool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A64395274B236500F4E8CE /* LogInViewSchool.swift */; };
+		11A64397274B236500F4E8CE /* LogInViewSchool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A64395274B236500F4E8CE /* LogInViewSchool.swift */; };
+		11A64399274B4C1E00F4E8CE /* RegisterSchoolPG2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A64398274B4C1E00F4E8CE /* RegisterSchoolPG2View.swift */; };
+		11A6439A274B4C1E00F4E8CE /* RegisterSchoolPG2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A64398274B4C1E00F4E8CE /* RegisterSchoolPG2View.swift */; };
+		11A6439C274B4C5900F4E8CE /* RegisterSchoolPG3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A6439B274B4C5900F4E8CE /* RegisterSchoolPG3View.swift */; };
+		11A6439D274B4C5900F4E8CE /* RegisterSchoolPG3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A6439B274B4C5900F4E8CE /* RegisterSchoolPG3View.swift */; };
+		11A6439F274B512500F4E8CE /* LoginViewStudent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A6439E274B512500F4E8CE /* LoginViewStudent.swift */; };
+		11A643A0274B512500F4E8CE /* LoginViewStudent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A6439E274B512500F4E8CE /* LoginViewStudent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +54,11 @@
 		118B5422274AE91300F442BF /* EventModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventModel.swift; sourceTree = "<group>"; };
 		118B5425274AE93E00F442BF /* EventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewModel.swift; sourceTree = "<group>"; };
 		118B542B274AE97C00F442BF /* StudentHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentHomeView.swift; sourceTree = "<group>"; };
+		118B542E274AEE4600F442BF /* StudentSignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentSignUp.swift; sourceTree = "<group>"; };
+		11A64395274B236500F4E8CE /* LogInViewSchool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewSchool.swift; sourceTree = "<group>"; };
+		11A64398274B4C1E00F4E8CE /* RegisterSchoolPG2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterSchoolPG2View.swift; sourceTree = "<group>"; };
+		11A6439B274B4C5900F4E8CE /* RegisterSchoolPG3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterSchoolPG3View.swift; sourceTree = "<group>"; };
+		11A6439E274B512500F4E8CE /* LoginViewStudent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewStudent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,7 +137,12 @@
 			children = (
 				118B53DD274A9CB800F442BF /* ContentView.swift */,
 				118B541F274AE88100F442BF /* RegisterSchoolView.swift */,
+				11A64398274B4C1E00F4E8CE /* RegisterSchoolPG2View.swift */,
+				11A6439B274B4C5900F4E8CE /* RegisterSchoolPG3View.swift */,
 				118B542B274AE97C00F442BF /* StudentHomeView.swift */,
+				118B542E274AEE4600F442BF /* StudentSignUp.swift */,
+				11A64395274B236500F4E8CE /* LogInViewSchool.swift */,
+				11A6439E274B512500F4E8CE /* LoginViewStudent.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -248,9 +268,14 @@
 			files = (
 				118B53EE274A9CBA00F442BF /* ContentView.swift in Sources */,
 				118B542C274AE97C00F442BF /* StudentHomeView.swift in Sources */,
+				11A6439C274B4C5900F4E8CE /* RegisterSchoolPG3View.swift in Sources */,
 				118B5420274AE88100F442BF /* RegisterSchoolView.swift in Sources */,
 				118B5423274AE91300F442BF /* EventModel.swift in Sources */,
+				11A6439F274B512500F4E8CE /* LoginViewStudent.swift in Sources */,
+				11A64396274B236500F4E8CE /* LogInViewSchool.swift in Sources */,
+				118B542F274AEE4600F442BF /* StudentSignUp.swift in Sources */,
 				118B5426274AE93E00F442BF /* EventViewModel.swift in Sources */,
+				11A64399274B4C1E00F4E8CE /* RegisterSchoolPG2View.swift in Sources */,
 				118B53EC274A9CBA00F442BF /* SplannerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,9 +286,14 @@
 			files = (
 				118B53EF274A9CBA00F442BF /* ContentView.swift in Sources */,
 				118B542D274AE97C00F442BF /* StudentHomeView.swift in Sources */,
+				11A6439D274B4C5900F4E8CE /* RegisterSchoolPG3View.swift in Sources */,
 				118B5421274AE88100F442BF /* RegisterSchoolView.swift in Sources */,
 				118B5424274AE91300F442BF /* EventModel.swift in Sources */,
+				11A643A0274B512500F4E8CE /* LoginViewStudent.swift in Sources */,
+				11A64397274B236500F4E8CE /* LogInViewSchool.swift in Sources */,
+				118B5430274AEE4600F442BF /* StudentSignUp.swift in Sources */,
 				118B5427274AE93E00F442BF /* EventViewModel.swift in Sources */,
+				11A6439A274B4C1E00F4E8CE /* RegisterSchoolPG2View.swift in Sources */,
 				118B53ED274A9CBA00F442BF /* SplannerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

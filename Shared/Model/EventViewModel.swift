@@ -15,8 +15,8 @@ class eventViewModel: ObservableObject {
 
  private var db = Firestore.firestore()
 
- func fetchData() {
-     db.collection("event").order(by: "date", descending: false).addSnapshotListener { (querySnapshot, error) in
+ func fetchData(email: String) {
+     db.collection("event").whereField("person", isEqualTo: email).order(by: "startDate", descending: false).addSnapshotListener { (querySnapshot, error) in
          guard let documents = querySnapshot?.documents else {
              print("No documents")
              return
@@ -24,8 +24,9 @@ class eventViewModel: ObservableObject {
          self.events = documents.map { (queryDocumentSnapshot) -> Event in
              let data = queryDocumentSnapshot.data()
              let title = data["title"] as? String ?? ""
-             let dateEvent = (data["date"] as? Timestamp)?.dateValue() ?? Date()
-             return Event(title: title, dateEvent: dateEvent)
+             let startDate = (data["startDate"] as? Timestamp)?.dateValue() ?? Date()
+             let endDate = (data["endDate"] as? Timestamp)?.dateValue() ?? Date()
+             return Event(title: title, startDate: startDate, endDate: endDate)
          }
      }
  }
